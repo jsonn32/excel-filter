@@ -1,0 +1,9 @@
+import pandas as pd
+
+csv1 = pd.read_csv('add1.csv')
+csv2 = pd.read_csv('add2.csv')
+
+combined_csv = pd.concat([csv1, csv2])
+
+combined_csv.to_csv('scraped_adresses.csv', index=False)
+
